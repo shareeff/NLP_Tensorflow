@@ -77,5 +77,6 @@ As tensorflow subclass method doesn't have any DAG of layers. It doesn't know ab
 ## Reference
 
 [1] https://github.com/tensorflow/docs/blob/master/site/en/r2/tutorials/text/transformer.ipynb
+
 [2] https://github.com/tensorflow/examples/blob/master/community/en/transformer_chatbot.ipynb
 
