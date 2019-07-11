@@ -27,7 +27,7 @@ $ python3 run_demo.py --input='input sentence'
 As tensorflow subclass method doesn't have any DAG of layers. It doesn't know about the input. So the model is wraped with keras functional api. As the result the model can directly load weight without initializing the model.
 
 ```
-    def create_transformer_model(num_layers, units, d_model, num_heads, vocab_size, dropout, training, name):
+   def create_transformer_model(num_layers, units, d_model, num_heads, vocab_size, dropout, training, name):
 
     inputs = tf.keras.Input(shape=(None,), name="inputs")
     dec_inputs = tf.keras.Input(shape=(None,), name="dec_inputs")
