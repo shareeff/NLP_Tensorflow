@@ -1,6 +1,6 @@
 import argparse
 import tensorflow as tf
-from tensorflow.keras.models import load_model
+#from tensorflow.keras.models import load_model
 from transformers import BertTokenizer
 from bert_model import Config, Transformer
 from configuration import *
@@ -87,7 +87,7 @@ def evaluate(sentence,
 
 def chatbot(sentence, tokenizer, model, demo=True):
     output, attention_weights = evaluate(sentence, tokenizer, model)
-    print(output)
+    #print(output)
     if demo:
         output = output.numpy().tolist()
         predicted_sentence = tokenizer.decode(output[1:-1])
