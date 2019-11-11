@@ -1,0 +1,385 @@
+INFO:transformers.tokenization_utils:loading file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-uncased-vocab.txt from cache at /home/shareef/.cache/torch/transformers/26bc1ad6c0ac742e9b52263248f6d0f00068293b33709fae12320c0e35ccfbbb.542ce4285a40d23a559526243235df47c5f75c197f04f37d1a0c124c32c9a084
+INFO:transformers.configuration_utils:loading configuration file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-uncased-config.json from cache at /home/shareef/.cache/torch/transformers/4dad0251492946e18ac39290fcfe91b89d370fee250efe9521476438fe8ca185.bf3b9ea126d8c0001ee8a1e8b92229871d06d36d8808208cc2449280da87785c
+INFO:transformers.configuration_utils:Model config {
+  "attention_probs_dropout_prob": 0.1,
+  "finetuning_task": null,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-12,
+  "max_position_embeddings": 512,
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "num_labels": 2,
+  "output_attentions": false,
+  "output_hidden_states": false,
+  "output_past": true,
+  "pruned_heads": {},
+  "torchscript": false,
+  "type_vocab_size": 2,
+  "use_bfloat16": false,
+  "vocab_size": 30522
+}
+
+INFO:transformers.modeling_tf_utils:loading weights file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-uncased-tf_model.h5 from cache at /home/shareef/.cache/torch/transformers/d667df51ec24c20190f01fb4c20a21debc4c4fc12f7e2f5441ac0a99690e3ee9.4733ec82e81d40e9cf5fd04556267d8958fb150e9339390fc64206b7e5a79c83.h5
+INFO:data_utils:Writing example 0
+INFO:data_utils:*** Example ***
+INFO:data_utils:guid: 89767
+INFO:data_utils:input_ids: 101 1045 2056 1045 1049 1037 5996 2158 999 102 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+INFO:data_utils:input_attention_mask: 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+INFO:data_utils:input_token_type_ids: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+INFO:data_utils:output_ids: 101 2025 2127 1996 2197 5850 19277 2038 2853 2049 2197 17357 999 102 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+INFO:data_utils:*** Example ***
+INFO:data_utils:guid: 40291
+INFO:data_utils:input_ids: 101 7942 1029 1045 2123 1056 2113 2054 2000 2425 2017 1012 2009 4165 2066 1037 6259 13523 28774 2000 2033 1012 1996 3291 1010 6213 1010 2003 2008 2017 2031 2053 6123 2005 2009 1012 2017 2128 1037 28463 25953 4818 2923 10514 2546 10768 4892 7942 1037 3634 2086 2044 19338 1012 2129 1996 3109 2572 1045 4011 2000 2191 2009 4906 1029 102 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+INFO:data_utils:input_attention_mask: 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+INFO:data_utils:input_token_type_ids: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+INFO:data_utils:output_ids: 101 1045 1049 4452 1010 11268 1012 2498 3084 3168 1012 3531 2393 2033 1012 102 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+INFO:data_utils:*** Example ***
+INFO:data_utils:guid: 61764
+INFO:data_utils:input_ids: 101 1045 1049 4147 1037 1056 3797 1998 12095 1012 102 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+INFO:data_utils:input_attention_mask: 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+INFO:data_utils:input_token_type_ids: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+INFO:data_utils:output_ids: 101 2428 1029 102 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+INFO:data_utils:*** Example ***
+INFO:data_utils:guid: 193277
+INFO:data_utils:input_ids: 101 1012 1012 1012 1998 1996 13219 6699 2029 3298 2149 1029 102 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+INFO:data_utils:input_attention_mask: 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+INFO:data_utils:input_token_type_ids: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+INFO:data_utils:output_ids: 101 1045 9544 2115 4802 9649 1055 7655 1996 7746 15035 2791 1997 1996 2529 4382 1012 102 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+INFO:data_utils:*** Example ***
+INFO:data_utils:guid: 1535
+INFO:data_utils:input_ids: 101 2043 2017 2042 1999 3827 2093 2086 1010 2009 2123 1056 2202 2146 1012 2292 1055 2175 1012 102 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+INFO:data_utils:input_attention_mask: 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+INFO:data_utils:input_token_type_ids: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+INFO:data_utils:output_ids: 101 2339 1029 102 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+INFO:data_utils:Writing example 10000
+INFO:data_utils:Writing example 20000
+INFO:data_utils:Writing example 30000
+INFO:data_utils:Writing example 40000
+INFO:data_utils:Writing example 50000
+INFO:data_utils:Writing example 60000
+INFO:data_utils:Writing example 70000
+WARNING:transformers.tokenization_utils:Token indices sequence length is longer than the specified maximum sequence length for this model (574 > 512). Running this sequence through the model will result in indexing errors
+INFO:data_utils:Writing example 80000
+WARNING:transformers.tokenization_utils:Token indices sequence length is longer than the specified maximum sequence length for this model (625 > 512). Running this sequence through the model will result in indexing errors
+INFO:data_utils:Writing example 90000
+INFO:data_utils:Writing example 100000
+INFO:data_utils:Writing example 110000
+INFO:data_utils:Writing example 120000
+INFO:data_utils:Writing example 130000
+WARNING:transformers.tokenization_utils:Token indices sequence length is longer than the specified maximum sequence length for this model (759 > 512). Running this sequence through the model will result in indexing errors
+INFO:data_utils:Writing example 140000
+INFO:data_utils:Writing example 150000
+INFO:data_utils:Writing example 160000
+INFO:data_utils:Writing example 170000
+INFO:data_utils:Writing example 0
+INFO:data_utils:*** Example ***
+INFO:data_utils:guid: 100252
+INFO:data_utils:input_ids: 101 7632 1012 2031 2017 2589 15451 28195 2664 1029 102 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+INFO:data_utils:input_attention_mask: 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+INFO:data_utils:input_token_type_ids: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+INFO:data_utils:output_ids: 101 7632 1010 7910 1012 7632 1012 1045 2359 2000 2173 2019 4748 1012 2748 1012 2412 2215 2000 2022 2619 2842 1029 2053 1010 2008 1055 1996 4748 1010 2021 2292 1055 2831 2055 2017 1999 1037 3371 1012 2412 2215 2000 2022 2619 2842 1029 2085 2017 2064 1012 2053 12489 1012 1012 1012 102 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+INFO:data_utils:*** Example ***
+INFO:data_utils:guid: 171245
+INFO:data_utils:input_ids: 101 1045 2131 2008 3110 1010 3398 1012 102 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+INFO:data_utils:input_attention_mask: 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+INFO:data_utils:input_token_type_ids: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+INFO:data_utils:output_ids: 101 2021 2017 2145 2228 2017 2064 2131 1996 11719 18921 2027 2079 1029 102 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+INFO:data_utils:*** Example ***
+INFO:data_utils:guid: 199269
+INFO:data_utils:input_ids: 101 2017 5050 1996 2142 2163 2085 1012 2057 2031 1037 7191 4611 2000 2022 2074 1998 2057 2031 2000 2022 2464 2000 2022 2074 1012 102 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+INFO:data_utils:input_attention_mask: 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+INFO:data_utils:input_token_type_ids: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+INFO:data_utils:output_ids: 101 2350 7779 7164 2002 2038 1037 7191 4611 1010 2205 1012 102 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+INFO:data_utils:*** Example ***
+INFO:data_utils:guid: 107857
+INFO:data_utils:input_ids: 101 1045 1049 3374 2055 2023 1012 2428 1012 102 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+INFO:data_utils:input_attention_mask: 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+INFO:data_utils:input_token_type_ids: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+INFO:data_utils:output_ids: 101 2035 2157 1010 9078 1029 102 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+INFO:data_utils:*** Example ***
+INFO:data_utils:guid: 132167
+INFO:data_utils:input_ids: 101 2003 2008 2115 2668 1029 102 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+INFO:data_utils:input_attention_mask: 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+INFO:data_utils:input_token_type_ids: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+INFO:data_utils:output_ids: 101 2070 1997 2009 1010 2748 1012 102 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+INFO:data_utils:Writing example 10000
+INFO:data_utils:Writing example 20000
+INFO:data_utils:Writing example 30000
+INFO:data_utils:Writing example 40000
+WARNING:tensorflow:Gradients do not exist for variables ['bert_for_chat_bot_encoder/bert/pooler/dense/kernel:0', 'bert_for_chat_bot_encoder/bert/pooler/dense/bias:0'] when minimizing the loss.
+WARNING:tensorflow:Gradients do not exist for variables ['bert_for_chat_bot_encoder/bert/pooler/dense/kernel:0', 'bert_for_chat_bot_encoder/bert/pooler/dense/bias:0'] when minimizing the loss.
+INFO:bert_transformer_training:Epoch 1 Batch 0 Loss 1.2152 Accuracy 0.0000
+INFO:bert_transformer_training:Epoch 1 Batch 500 Loss 0.9389 Accuracy 0.0127
+INFO:bert_transformer_training:Epoch 1 Batch 1000 Loss 0.8367 Accuracy 0.0135
+INFO:bert_transformer_training:Epoch 1 Batch 1500 Loss 0.7910 Accuracy 0.0152
+INFO:bert_transformer_training:Epoch 1 Batch 2000 Loss 0.7628 Accuracy 0.0165
+INFO:bert_transformer_training:Epoch 1 Batch 2500 Loss 0.7406 Accuracy 0.0177
+INFO:bert_transformer_training:Epoch 1 Batch 3000 Loss 0.7216 Accuracy 0.0189
+INFO:bert_transformer_training:Epoch 1 Batch 3500 Loss 0.7070 Accuracy 0.0199
+INFO:bert_transformer_training:Epoch 1 Batch 4000 Loss 0.6943 Accuracy 0.0207
+INFO:bert_transformer_training:Epoch 1 Batch 4500 Loss 0.6846 Accuracy 0.0215
+INFO:bert_transformer_training:Epoch 1 Batch 5000 Loss 0.6750 Accuracy 0.0221
+INFO:bert_transformer_training:Epoch 1 Batch 5500 Loss 0.6666 Accuracy 0.0226
+INFO:bert_transformer_training:Epoch 1 Batch 6000 Loss 0.6605 Accuracy 0.0231
+INFO:bert_transformer_training:Epoch 1 Batch 6500 Loss 0.6555 Accuracy 0.0235
+INFO:bert_transformer_training:Epoch 1 Batch 7000 Loss 0.6510 Accuracy 0.0239
+INFO:bert_transformer_training:Epoch 1 Batch 7500 Loss 0.6462 Accuracy 0.0242
+INFO:bert_transformer_training:Epoch 1 Batch 8000 Loss 0.6415 Accuracy 0.0245
+INFO:bert_transformer_training:Epoch 1 Batch 8500 Loss 0.6374 Accuracy 0.0248
+INFO:bert_transformer_training:Epoch 1 Batch 9000 Loss 0.6333 Accuracy 0.0250
+INFO:bert_transformer_training:Epoch 1 Batch 9500 Loss 0.6297 Accuracy 0.0252
+INFO:bert_transformer_training:Epoch 1 Batch 10000 Loss 0.6261 Accuracy 0.0255
+INFO:bert_transformer_training:Epoch 1 Batch 10500 Loss 0.6230 Accuracy 0.0257
+INFO:bert_transformer_training:Epoch 1 Batch 11000 Loss 0.6207 Accuracy 0.0259
+WARNING:tensorflow:Gradients do not exist for variables ['bert_for_chat_bot_encoder/bert/pooler/dense/kernel:0', 'bert_for_chat_bot_encoder/bert/pooler/dense/bias:0'] when minimizing the loss.
+INFO:bert_transformer_training:Saving checkpoint for epoch 1 at ./save/checkpoint/bertchatbot/ckpt-1
+INFO:bert_transformer_training:Epoch 1 Loss 0.6203 Accuracy 0.0259
+INFO:bert_transformer_training:Time taken for 1 epoch: 6103.0451719760895 secs
+
+INFO:bert_transformer_training:Epoch 2 Batch 0 Loss 0.5028 Accuracy 0.0300
+INFO:bert_transformer_training:Epoch 2 Batch 500 Loss 0.5498 Accuracy 0.0297
+INFO:bert_transformer_training:Epoch 2 Batch 1000 Loss 0.5592 Accuracy 0.0301
+INFO:bert_transformer_training:Epoch 2 Batch 1500 Loss 0.5608 Accuracy 0.0303
+INFO:bert_transformer_training:Epoch 2 Batch 2000 Loss 0.5630 Accuracy 0.0305
+INFO:bert_transformer_training:Epoch 2 Batch 2500 Loss 0.5618 Accuracy 0.0306
+INFO:bert_transformer_training:Epoch 2 Batch 3000 Loss 0.5596 Accuracy 0.0306
+INFO:bert_transformer_training:Epoch 2 Batch 3500 Loss 0.5589 Accuracy 0.0307
+INFO:bert_transformer_training:Epoch 2 Batch 4000 Loss 0.5576 Accuracy 0.0307
+INFO:bert_transformer_training:Epoch 2 Batch 4500 Loss 0.5571 Accuracy 0.0308
+INFO:bert_transformer_training:Epoch 2 Batch 5000 Loss 0.5554 Accuracy 0.0308
+INFO:bert_transformer_training:Epoch 2 Batch 5500 Loss 0.5536 Accuracy 0.0308
+INFO:bert_transformer_training:Epoch 2 Batch 6000 Loss 0.5534 Accuracy 0.0309
+INFO:bert_transformer_training:Epoch 2 Batch 6500 Loss 0.5535 Accuracy 0.0310
+INFO:bert_transformer_training:Epoch 2 Batch 7000 Loss 0.5533 Accuracy 0.0310
+INFO:bert_transformer_training:Epoch 2 Batch 7500 Loss 0.5526 Accuracy 0.0311
+INFO:bert_transformer_training:Epoch 2 Batch 8000 Loss 0.5516 Accuracy 0.0311
+INFO:bert_transformer_training:Epoch 2 Batch 8500 Loss 0.5508 Accuracy 0.0311
+INFO:bert_transformer_training:Epoch 2 Batch 9000 Loss 0.5496 Accuracy 0.0312
+INFO:bert_transformer_training:Epoch 2 Batch 9500 Loss 0.5489 Accuracy 0.0312
+INFO:bert_transformer_training:Epoch 2 Batch 10000 Loss 0.5479 Accuracy 0.0312
+INFO:bert_transformer_training:Epoch 2 Batch 10500 Loss 0.5472 Accuracy 0.0313
+INFO:bert_transformer_training:Epoch 2 Batch 11000 Loss 0.5469 Accuracy 0.0313
+INFO:bert_transformer_training:Saving checkpoint for epoch 2 at ./save/checkpoint/bertchatbot/ckpt-2
+INFO:bert_transformer_training:Epoch 2 Loss 0.5469 Accuracy 0.0313
+INFO:bert_transformer_training:Time taken for 1 epoch: 5760.424875974655 secs
+
+INFO:bert_transformer_training:Epoch 3 Batch 0 Loss 0.6056 Accuracy 0.0325
+INFO:bert_transformer_training:Epoch 3 Batch 500 Loss 0.5241 Accuracy 0.0318
+INFO:bert_transformer_training:Epoch 3 Batch 1000 Loss 0.5330 Accuracy 0.0321
+INFO:bert_transformer_training:Epoch 3 Batch 1500 Loss 0.5356 Accuracy 0.0323
+INFO:bert_transformer_training:Epoch 3 Batch 2000 Loss 0.5378 Accuracy 0.0324
+INFO:bert_transformer_training:Epoch 3 Batch 2500 Loss 0.5372 Accuracy 0.0325
+INFO:bert_transformer_training:Epoch 3 Batch 3000 Loss 0.5356 Accuracy 0.0325
+INFO:bert_transformer_training:Epoch 3 Batch 3500 Loss 0.5352 Accuracy 0.0325
+INFO:bert_transformer_training:Epoch 3 Batch 4000 Loss 0.5343 Accuracy 0.0325
+INFO:bert_transformer_training:Epoch 3 Batch 4500 Loss 0.5339 Accuracy 0.0326
+INFO:bert_transformer_training:Epoch 3 Batch 5000 Loss 0.5326 Accuracy 0.0326
+INFO:bert_transformer_training:Epoch 3 Batch 5500 Loss 0.5312 Accuracy 0.0325
+INFO:bert_transformer_training:Epoch 3 Batch 6000 Loss 0.5311 Accuracy 0.0326
+INFO:bert_transformer_training:Epoch 3 Batch 6500 Loss 0.5315 Accuracy 0.0326
+INFO:bert_transformer_training:Epoch 3 Batch 7000 Loss 0.5315 Accuracy 0.0327
+INFO:bert_transformer_training:Epoch 3 Batch 7500 Loss 0.5310 Accuracy 0.0327
+INFO:bert_transformer_training:Epoch 3 Batch 8000 Loss 0.5302 Accuracy 0.0327
+INFO:bert_transformer_training:Epoch 3 Batch 8500 Loss 0.5297 Accuracy 0.0327
+INFO:bert_transformer_training:Epoch 3 Batch 9000 Loss 0.5287 Accuracy 0.0327
+INFO:bert_transformer_training:Epoch 3 Batch 9500 Loss 0.5282 Accuracy 0.0327
+INFO:bert_transformer_training:Epoch 3 Batch 10000 Loss 0.5275 Accuracy 0.0327
+INFO:bert_transformer_training:Epoch 3 Batch 10500 Loss 0.5270 Accuracy 0.0327
+INFO:bert_transformer_training:Epoch 3 Batch 11000 Loss 0.5269 Accuracy 0.0328
+INFO:bert_transformer_training:Saving checkpoint for epoch 3 at ./save/checkpoint/bertchatbot/ckpt-3
+INFO:bert_transformer_training:Epoch 3 Loss 0.5269 Accuracy 0.0328
+INFO:bert_transformer_training:Time taken for 1 epoch: 5757.359283685684 secs
+
+INFO:bert_transformer_training:Epoch 4 Batch 0 Loss 0.3814 Accuracy 0.0290
+INFO:bert_transformer_training:Epoch 4 Batch 500 Loss 0.5091 Accuracy 0.0327
+INFO:bert_transformer_training:Epoch 4 Batch 1000 Loss 0.5177 Accuracy 0.0332
+INFO:bert_transformer_training:Epoch 4 Batch 1500 Loss 0.5203 Accuracy 0.0334
+INFO:bert_transformer_training:Epoch 4 Batch 2000 Loss 0.5224 Accuracy 0.0335
+INFO:bert_transformer_training:Epoch 4 Batch 2500 Loss 0.5220 Accuracy 0.0335
+INFO:bert_transformer_training:Epoch 4 Batch 3000 Loss 0.5204 Accuracy 0.0335
+INFO:bert_transformer_training:Epoch 4 Batch 3500 Loss 0.5202 Accuracy 0.0336
+INFO:bert_transformer_training:Epoch 4 Batch 4000 Loss 0.5194 Accuracy 0.0336
+INFO:bert_transformer_training:Epoch 4 Batch 4500 Loss 0.5191 Accuracy 0.0336
+INFO:bert_transformer_training:Epoch 4 Batch 5000 Loss 0.5179 Accuracy 0.0336
+INFO:bert_transformer_training:Epoch 4 Batch 5500 Loss 0.5167 Accuracy 0.0336
+INFO:bert_transformer_training:Epoch 4 Batch 6000 Loss 0.5168 Accuracy 0.0336
+INFO:bert_transformer_training:Epoch 4 Batch 6500 Loss 0.5173 Accuracy 0.0337
+INFO:bert_transformer_training:Epoch 4 Batch 7000 Loss 0.5174 Accuracy 0.0337
+INFO:bert_transformer_training:Epoch 4 Batch 7500 Loss 0.5171 Accuracy 0.0337
+INFO:bert_transformer_training:Epoch 4 Batch 8000 Loss 0.5164 Accuracy 0.0337
+INFO:bert_transformer_training:Epoch 4 Batch 8500 Loss 0.5158 Accuracy 0.0337
+INFO:bert_transformer_training:Epoch 4 Batch 9000 Loss 0.5151 Accuracy 0.0337
+INFO:bert_transformer_training:Epoch 4 Batch 9500 Loss 0.5146 Accuracy 0.0337
+INFO:bert_transformer_training:Epoch 4 Batch 10000 Loss 0.5140 Accuracy 0.0337
+INFO:bert_transformer_training:Epoch 4 Batch 10500 Loss 0.5135 Accuracy 0.0337
+INFO:bert_transformer_training:Epoch 4 Batch 11000 Loss 0.5136 Accuracy 0.0338
+INFO:bert_transformer_training:Saving checkpoint for epoch 4 at ./save/checkpoint/bertchatbot/ckpt-4
+INFO:bert_transformer_training:Epoch 4 Loss 0.5135 Accuracy 0.0338
+INFO:bert_transformer_training:Time taken for 1 epoch: 5759.5729637146 secs
+
+INFO:bert_transformer_training:Epoch 5 Batch 0 Loss 0.6540 Accuracy 0.0364
+INFO:bert_transformer_training:Epoch 5 Batch 500 Loss 0.4972 Accuracy 0.0336
+INFO:bert_transformer_training:Epoch 5 Batch 1000 Loss 0.5067 Accuracy 0.0342
+INFO:bert_transformer_training:Epoch 5 Batch 1500 Loss 0.5092 Accuracy 0.0343
+INFO:bert_transformer_training:Epoch 5 Batch 2000 Loss 0.5111 Accuracy 0.0344
+INFO:bert_transformer_training:Epoch 5 Batch 2500 Loss 0.5107 Accuracy 0.0344
+INFO:bert_transformer_training:Epoch 5 Batch 3000 Loss 0.5092 Accuracy 0.0344
+INFO:bert_transformer_training:Epoch 5 Batch 3500 Loss 0.5092 Accuracy 0.0344
+INFO:bert_transformer_training:Epoch 5 Batch 4000 Loss 0.5084 Accuracy 0.0344
+INFO:bert_transformer_training:Epoch 5 Batch 4500 Loss 0.5081 Accuracy 0.0345
+INFO:bert_transformer_training:Epoch 5 Batch 5000 Loss 0.5070 Accuracy 0.0345
+INFO:bert_transformer_training:Epoch 5 Batch 5500 Loss 0.5057 Accuracy 0.0344
+INFO:bert_transformer_training:Epoch 5 Batch 6000 Loss 0.5059 Accuracy 0.0345
+INFO:bert_transformer_training:Epoch 5 Batch 6500 Loss 0.5062 Accuracy 0.0345
+INFO:bert_transformer_training:Epoch 5 Batch 7000 Loss 0.5065 Accuracy 0.0346
+INFO:bert_transformer_training:Epoch 5 Batch 7500 Loss 0.5061 Accuracy 0.0346
+INFO:bert_transformer_training:Epoch 5 Batch 8000 Loss 0.5055 Accuracy 0.0346
+INFO:bert_transformer_training:Epoch 5 Batch 8500 Loss 0.5051 Accuracy 0.0346
+INFO:bert_transformer_training:Epoch 5 Batch 9000 Loss 0.5043 Accuracy 0.0346
+INFO:bert_transformer_training:Epoch 5 Batch 9500 Loss 0.5039 Accuracy 0.0346
+INFO:bert_transformer_training:Epoch 5 Batch 10000 Loss 0.5034 Accuracy 0.0346
+INFO:bert_transformer_training:Epoch 5 Batch 10500 Loss 0.5029 Accuracy 0.0346
+INFO:bert_transformer_training:Epoch 5 Batch 11000 Loss 0.5030 Accuracy 0.0346
+INFO:bert_transformer_training:Saving checkpoint for epoch 5 at ./save/checkpoint/bertchatbot/ckpt-5
+INFO:bert_transformer_training:Epoch 5 Loss 0.5029 Accuracy 0.0346
+INFO:bert_transformer_training:Time taken for 1 epoch: 5755.590642213821 secs
+
+INFO:bert_transformer_training:Epoch 6 Batch 0 Loss 0.5118 Accuracy 0.0300
+INFO:bert_transformer_training:Epoch 6 Batch 500 Loss 0.4870 Accuracy 0.0344
+INFO:bert_transformer_training:Epoch 6 Batch 1000 Loss 0.4966 Accuracy 0.0349
+INFO:bert_transformer_training:Epoch 6 Batch 1500 Loss 0.4996 Accuracy 0.0350
+INFO:bert_transformer_training:Epoch 6 Batch 2000 Loss 0.5011 Accuracy 0.0351
+INFO:bert_transformer_training:Epoch 6 Batch 2500 Loss 0.5009 Accuracy 0.0351
+INFO:bert_transformer_training:Epoch 6 Batch 3000 Loss 0.4997 Accuracy 0.0351
+INFO:bert_transformer_training:Epoch 6 Batch 3500 Loss 0.4993 Accuracy 0.0352
+INFO:bert_transformer_training:Epoch 6 Batch 4000 Loss 0.4987 Accuracy 0.0352
+INFO:bert_transformer_training:Epoch 6 Batch 4500 Loss 0.4983 Accuracy 0.0352
+INFO:bert_transformer_training:Epoch 6 Batch 5000 Loss 0.4974 Accuracy 0.0352
+INFO:bert_transformer_training:Epoch 6 Batch 5500 Loss 0.4962 Accuracy 0.0352
+INFO:bert_transformer_training:Epoch 6 Batch 6000 Loss 0.4964 Accuracy 0.0353
+INFO:bert_transformer_training:Epoch 6 Batch 6500 Loss 0.4968 Accuracy 0.0353
+INFO:bert_transformer_training:Epoch 6 Batch 7000 Loss 0.4971 Accuracy 0.0353
+INFO:bert_transformer_training:Epoch 6 Batch 7500 Loss 0.4966 Accuracy 0.0353
+INFO:bert_transformer_training:Epoch 6 Batch 8000 Loss 0.4962 Accuracy 0.0353
+INFO:bert_transformer_training:Epoch 6 Batch 8500 Loss 0.4956 Accuracy 0.0354
+INFO:bert_transformer_training:Epoch 6 Batch 9000 Loss 0.4949 Accuracy 0.0354
+INFO:bert_transformer_training:Epoch 6 Batch 9500 Loss 0.4945 Accuracy 0.0354
+INFO:bert_transformer_training:Epoch 6 Batch 10000 Loss 0.4939 Accuracy 0.0354
+INFO:bert_transformer_training:Epoch 6 Batch 10500 Loss 0.4935 Accuracy 0.0354
+INFO:bert_transformer_training:Epoch 6 Batch 11000 Loss 0.4935 Accuracy 0.0354
+INFO:bert_transformer_training:Saving checkpoint for epoch 6 at ./save/checkpoint/bertchatbot/ckpt-6
+INFO:bert_transformer_training:Epoch 6 Loss 0.4935 Accuracy 0.0354
+INFO:bert_transformer_training:Time taken for 1 epoch: 5756.597038507462 secs
+
+INFO:bert_transformer_training:Epoch 7 Batch 0 Loss 0.6487 Accuracy 0.0389
+INFO:bert_transformer_training:Epoch 7 Batch 500 Loss 0.4781 Accuracy 0.0352
+INFO:bert_transformer_training:Epoch 7 Batch 1000 Loss 0.4873 Accuracy 0.0357
+INFO:bert_transformer_training:Epoch 7 Batch 1500 Loss 0.4903 Accuracy 0.0359
+INFO:bert_transformer_training:Epoch 7 Batch 2000 Loss 0.4921 Accuracy 0.0360
+INFO:bert_transformer_training:Epoch 7 Batch 2500 Loss 0.4918 Accuracy 0.0360
+INFO:bert_transformer_training:Epoch 7 Batch 3000 Loss 0.4904 Accuracy 0.0360
+INFO:bert_transformer_training:Epoch 7 Batch 3500 Loss 0.4903 Accuracy 0.0360
+INFO:bert_transformer_training:Epoch 7 Batch 4000 Loss 0.4896 Accuracy 0.0360
+INFO:bert_transformer_training:Epoch 7 Batch 4500 Loss 0.4896 Accuracy 0.0361
+INFO:bert_transformer_training:Epoch 7 Batch 5000 Loss 0.4884 Accuracy 0.0361
+INFO:bert_transformer_training:Epoch 7 Batch 5500 Loss 0.4874 Accuracy 0.0360
+INFO:bert_transformer_training:Epoch 7 Batch 6000 Loss 0.4873 Accuracy 0.0361
+INFO:bert_transformer_training:Epoch 7 Batch 6500 Loss 0.4878 Accuracy 0.0361
+INFO:bert_transformer_training:Epoch 7 Batch 7000 Loss 0.4881 Accuracy 0.0361
+INFO:bert_transformer_training:Epoch 7 Batch 7500 Loss 0.4876 Accuracy 0.0362
+INFO:bert_transformer_training:Epoch 7 Batch 8000 Loss 0.4871 Accuracy 0.0361
+INFO:bert_transformer_training:Epoch 7 Batch 8500 Loss 0.4867 Accuracy 0.0362
+INFO:bert_transformer_training:Epoch 7 Batch 9000 Loss 0.4860 Accuracy 0.0362
+INFO:bert_transformer_training:Epoch 7 Batch 9500 Loss 0.4856 Accuracy 0.0362
+INFO:bert_transformer_training:Epoch 7 Batch 10000 Loss 0.4850 Accuracy 0.0362
+INFO:bert_transformer_training:Epoch 7 Batch 10500 Loss 0.4846 Accuracy 0.0362
+INFO:bert_transformer_training:Epoch 7 Batch 11000 Loss 0.4847 Accuracy 0.0362
+INFO:bert_transformer_training:Saving checkpoint for epoch 7 at ./save/checkpoint/bertchatbot/ckpt-7
+INFO:bert_transformer_training:Epoch 7 Loss 0.4846 Accuracy 0.0362
+INFO:bert_transformer_training:Time taken for 1 epoch: 5756.248052358627 secs
+
+INFO:bert_transformer_training:Epoch 8 Batch 0 Loss 0.5528 Accuracy 0.0389
+INFO:bert_transformer_training:Epoch 8 Batch 500 Loss 0.4691 Accuracy 0.0361
+INFO:bert_transformer_training:Epoch 8 Batch 1000 Loss 0.4782 Accuracy 0.0365
+INFO:bert_transformer_training:Epoch 8 Batch 1500 Loss 0.4816 Accuracy 0.0367
+INFO:bert_transformer_training:Epoch 8 Batch 2000 Loss 0.4833 Accuracy 0.0368
+INFO:bert_transformer_training:Epoch 8 Batch 2500 Loss 0.4831 Accuracy 0.0368
+INFO:bert_transformer_training:Epoch 8 Batch 3000 Loss 0.4819 Accuracy 0.0368
+INFO:bert_transformer_training:Epoch 8 Batch 3500 Loss 0.4818 Accuracy 0.0369
+INFO:bert_transformer_training:Epoch 8 Batch 4000 Loss 0.4811 Accuracy 0.0369
+INFO:bert_transformer_training:Epoch 8 Batch 4500 Loss 0.4809 Accuracy 0.0369
+INFO:bert_transformer_training:Epoch 8 Batch 5000 Loss 0.4797 Accuracy 0.0369
+INFO:bert_transformer_training:Epoch 8 Batch 5500 Loss 0.4786 Accuracy 0.0369
+INFO:bert_transformer_training:Epoch 8 Batch 6000 Loss 0.4787 Accuracy 0.0369
+INFO:bert_transformer_training:Epoch 8 Batch 6500 Loss 0.4792 Accuracy 0.0370
+INFO:bert_transformer_training:Epoch 8 Batch 7000 Loss 0.4795 Accuracy 0.0370
+INFO:bert_transformer_training:Epoch 8 Batch 7500 Loss 0.4790 Accuracy 0.0370
+INFO:bert_transformer_training:Epoch 8 Batch 8000 Loss 0.4785 Accuracy 0.0370
+INFO:bert_transformer_training:Epoch 8 Batch 8500 Loss 0.4780 Accuracy 0.0370
+INFO:bert_transformer_training:Epoch 8 Batch 9000 Loss 0.4773 Accuracy 0.0370
+INFO:bert_transformer_training:Epoch 8 Batch 9500 Loss 0.4770 Accuracy 0.0370
+INFO:bert_transformer_training:Epoch 8 Batch 10000 Loss 0.4764 Accuracy 0.0370
+INFO:bert_transformer_training:Epoch 8 Batch 10500 Loss 0.4761 Accuracy 0.0370
+INFO:bert_transformer_training:Epoch 8 Batch 11000 Loss 0.4761 Accuracy 0.0371
+INFO:bert_transformer_training:Saving checkpoint for epoch 8 at ./save/checkpoint/bertchatbot/ckpt-8
+INFO:bert_transformer_training:Epoch 8 Loss 0.4760 Accuracy 0.0371
+INFO:bert_transformer_training:Time taken for 1 epoch: 5757.240280866623 secs
+
+INFO:bert_transformer_training:Epoch 9 Batch 0 Loss 0.6224 Accuracy 0.0374
+INFO:bert_transformer_training:Epoch 9 Batch 500 Loss 0.4608 Accuracy 0.0370
+INFO:bert_transformer_training:Epoch 9 Batch 1000 Loss 0.4706 Accuracy 0.0374
+INFO:bert_transformer_training:Epoch 9 Batch 1500 Loss 0.4727 Accuracy 0.0375
+INFO:bert_transformer_training:Epoch 9 Batch 2000 Loss 0.4748 Accuracy 0.0377
+INFO:bert_transformer_training:Epoch 9 Batch 2500 Loss 0.4744 Accuracy 0.0377
+INFO:bert_transformer_training:Epoch 9 Batch 3000 Loss 0.4731 Accuracy 0.0377
+INFO:bert_transformer_training:Epoch 9 Batch 3500 Loss 0.4729 Accuracy 0.0378
+INFO:bert_transformer_training:Epoch 9 Batch 4000 Loss 0.4721 Accuracy 0.0378
+INFO:bert_transformer_training:Epoch 9 Batch 4500 Loss 0.4720 Accuracy 0.0378
+INFO:bert_transformer_training:Epoch 9 Batch 5000 Loss 0.4708 Accuracy 0.0378
+INFO:bert_transformer_training:Epoch 9 Batch 5500 Loss 0.4698 Accuracy 0.0378
+INFO:bert_transformer_training:Epoch 9 Batch 6000 Loss 0.4699 Accuracy 0.0378
+INFO:bert_transformer_training:Epoch 9 Batch 6500 Loss 0.4703 Accuracy 0.0378
+INFO:bert_transformer_training:Epoch 9 Batch 7000 Loss 0.4705 Accuracy 0.0379
+INFO:bert_transformer_training:Epoch 9 Batch 7500 Loss 0.4702 Accuracy 0.0379
+INFO:bert_transformer_training:Epoch 9 Batch 8000 Loss 0.4696 Accuracy 0.0379
+INFO:bert_transformer_training:Epoch 9 Batch 8500 Loss 0.4692 Accuracy 0.0379
+INFO:bert_transformer_training:Epoch 9 Batch 9000 Loss 0.4685 Accuracy 0.0379
+INFO:bert_transformer_training:Epoch 9 Batch 9500 Loss 0.4681 Accuracy 0.0379
+INFO:bert_transformer_training:Epoch 9 Batch 10000 Loss 0.4675 Accuracy 0.0379
+INFO:bert_transformer_training:Epoch 9 Batch 10500 Loss 0.4672 Accuracy 0.0379
+INFO:bert_transformer_training:Epoch 9 Batch 11000 Loss 0.4673 Accuracy 0.0379
+INFO:bert_transformer_training:Saving checkpoint for epoch 9 at ./save/checkpoint/bertchatbot/ckpt-9
+INFO:bert_transformer_training:Epoch 9 Loss 0.4673 Accuracy 0.0380
+INFO:bert_transformer_training:Time taken for 1 epoch: 5757.42440366745 secs
+
+INFO:bert_transformer_training:Epoch 10 Batch 0 Loss 0.5292 Accuracy 0.0468
+INFO:bert_transformer_training:Epoch 10 Batch 500 Loss 0.4508 Accuracy 0.0378
+INFO:bert_transformer_training:Epoch 10 Batch 1000 Loss 0.4614 Accuracy 0.0382
+INFO:bert_transformer_training:Epoch 10 Batch 1500 Loss 0.4642 Accuracy 0.0384
+INFO:bert_transformer_training:Epoch 10 Batch 2000 Loss 0.4661 Accuracy 0.0386
+INFO:bert_transformer_training:Epoch 10 Batch 2500 Loss 0.4657 Accuracy 0.0386
+INFO:bert_transformer_training:Epoch 10 Batch 3000 Loss 0.4644 Accuracy 0.0386
+INFO:bert_transformer_training:Epoch 10 Batch 3500 Loss 0.4642 Accuracy 0.0387
+INFO:bert_transformer_training:Epoch 10 Batch 4000 Loss 0.4633 Accuracy 0.0386
+INFO:bert_transformer_training:Epoch 10 Batch 4500 Loss 0.4633 Accuracy 0.0387
+INFO:bert_transformer_training:Epoch 10 Batch 5000 Loss 0.4622 Accuracy 0.0387
+INFO:bert_transformer_training:Epoch 10 Batch 5500 Loss 0.4611 Accuracy 0.0387
+INFO:bert_transformer_training:Epoch 10 Batch 6000 Loss 0.4612 Accuracy 0.0387
+INFO:bert_transformer_training:Epoch 10 Batch 6500 Loss 0.4617 Accuracy 0.0387
+INFO:bert_transformer_training:Epoch 10 Batch 7000 Loss 0.4618 Accuracy 0.0388
+INFO:bert_transformer_training:Epoch 10 Batch 7500 Loss 0.4615 Accuracy 0.0388
+INFO:bert_transformer_training:Epoch 10 Batch 8000 Loss 0.4610 Accuracy 0.0388
+INFO:bert_transformer_training:Epoch 10 Batch 8500 Loss 0.4605 Accuracy 0.0388
+INFO:bert_transformer_training:Epoch 10 Batch 9000 Loss 0.4598 Accuracy 0.0388
+INFO:bert_transformer_training:Epoch 10 Batch 9500 Loss 0.4595 Accuracy 0.0388
+INFO:bert_transformer_training:Epoch 10 Batch 10000 Loss 0.4589 Accuracy 0.0388
+INFO:bert_transformer_training:Epoch 10 Batch 10500 Loss 0.4585 Accuracy 0.0388
+INFO:bert_transformer_training:Epoch 10 Batch 11000 Loss 0.4586 Accuracy 0.0388
+INFO:bert_transformer_training:Saving checkpoint for epoch 10 at ./save/checkpoint/bertchatbot/ckpt-10
+INFO:bert_transformer_training:Epoch 10 Loss 0.4586 Accuracy 0.0388
+INFO:bert_transformer_training:Time taken for 1 epoch: 5857.69540643692 secs
+
